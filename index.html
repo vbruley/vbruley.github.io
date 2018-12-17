@@ -23,10 +23,6 @@
 			}
 			#info a, .button { color: #f00; font-weight: bold; text-decoration: underline; cursor: pointer }
 		</style>
-		
-		<script src="http://threejs.org/build/three.min.js"></script>
-		<script src="scripts/loaders/OBJLoader.js"></script>
-		
 	</head>
 
 	<body>
@@ -35,6 +31,8 @@
 		</div>
 
 		<!-- <script src="threejs/build/three.js"></script> -->
+		<script src="http://threejs.org/build/three.min.js"></script>
+		<script src="scripts/loaders/OBJLoader.js"></script>
 		
 
 
@@ -83,7 +81,7 @@
 				
 				
 				
-				loader.load( 'http://people.sc.fsu.edu/~jburkardt/data/obj/lamp.obj', function ( obj ) {
+				loader.load( 'models/magno/magno_0.obj', function ( obj ) {
 					object = obj;
 				}, onProgress, onError );
 				
