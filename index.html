@@ -68,6 +68,7 @@
 	var loader = new THREE.OBJLoader( manager );
 	var objLoader = new THREE.OBJLoader();
 	var strUser = 'magno';
+	
     init();
     main();
     function main() {
@@ -130,6 +131,8 @@
         camera.position.z = camz;
         camera.position.y = camy;
         camera
+	var controls = new THREE.OrbitControls( camera );
+	controls.update();
         // scene
         scene = new THREE.Scene();
         var ambientLight = new THREE.AmbientLight( 0xcccccc, 0.4 );
@@ -179,6 +182,7 @@
     //
     function animate() {
         requestAnimationFrame( animate );
+	 controls.update();
         render();
     }
     function render() {
