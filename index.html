@@ -48,7 +48,8 @@
     <select id="dmc" onchange="eventListener()">
 		  <option value='magno' selected> Fleur de lotus </option>
 		  <option value='nefertiti'> Nefertiti </option>
-		  <option value='obj2/'> Objet 3 </option>
+		  <option value='teddy/'> Teddy bear </option>
+		  <option value='vache/'> Vache laitière de Corèze </option>
 	</select>
 
 <script>
@@ -104,7 +105,7 @@
 		objLoader.load('models/' + strUser + '/' + strUser + '_' + index +  '.obj', function(object) {
 			updateMesh(object);
 			index++;
-			sleep(1);
+			//sleep(1);
 			loadNextFile();
 		}, onProgress, onError);
     }
