@@ -106,7 +106,7 @@
 		objLoader.load('models/' + strUser + '/' + strUser + '_' + index +  '.obj', function(object) {
 			updateMesh(object);
 			index++;
-			//sleep(1);
+			sleep(1);
 			loadNextFile();
 		}, onProgress, onError);
     }
